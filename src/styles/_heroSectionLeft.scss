@@ -1,0 +1,56 @@
+@use "variables" as *;
+
+.home__content {
+  max-width: 44rem;
+  & h3 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 0.3;
+  }
+  & h1 {
+    font-size: 5.6rem;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+  }
+  & p {
+    font-size: 1.6rem;
+  }
+  &--socialMedia a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: 0.2rem solid $main-color;
+    border-radius: 50%;
+    box-shadow: 0 0.2rem 0.5rem $shadow-color;
+    font-size: 2rem;
+    color: $main-color;
+    margin: 2.5rem 1rem 3rem 0;
+    transition: 0.5s ease;
+    &:hover {
+      background: $main-color;
+      color: $white-color;
+    }
+  }
+  &--btn {
+    display: inline-block;
+    padding: 1.2rem 2.8rem;
+    background: $main-color;
+    border-radius: 0.6rem;
+    box-shadow: 0 0.2rem 0.4rem $shadow-color;
+    font-size: 1.6rem;
+    color: $white-color;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    border: 0.2rem solid transparent;
+    transition: 0.5s ease;
+
+    &:hover {
+      background: transparent;
+      color: $main-color;
+      border-color: $main-color;
+    }
+  }
+}
